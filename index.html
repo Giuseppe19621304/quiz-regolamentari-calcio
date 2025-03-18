@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Regolamentari Calcio a 11</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-futbol"></i> Quiz Regolamentari Calcio a 11</h1>
+            <p class="subtitle">Metti alla prova la tua conoscenza delle regole del calcio!</p>
+        </header>
+
+        <main id="home-screen">
+            <div class="card">
+                <div class="card-content">
+                    <h2>Benvenuto al Quiz Regolamentare!</h2>
+                    <p>Questo quiz ti aiuterà a testare e migliorare la tua conoscenza delle regole del calcio a 11.</p>
+                    
+                    <div class="stats-container" id="user-stats">
+                        <div class="stat-box">
+                            <span class="stat-value" id="total-completed">0</span>
+                            <span class="stat-label">Quiz completati</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-value" id="best-score">0</span>
+                            <span class="stat-label">Miglior punteggio</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-value" id="current-streak">0</span>
+                            <span class="stat-label">Giorni consecutivi</span>
+                        </div>
+                    </div>
+
+                    <div class="badges-container" id="badges-showcase">
+                        <h3>I tuoi badge</h3>
+                        <div class="badges-grid" id="earned-badges">
+                            <!-- I badge verranno aggiunti dinamicamente qui -->
+                            <div class="badge locked">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quiz-modes">
+                        <h3>Scegli una modalità di gioco</h3>
+                        <div class="mode-grid">
+                            <div class="mode-card" id="quick-mode">
+                                <i class="fas fa-bolt"></i>
+                                <h4>Quiz Rapido</h4>
+                                <p>10 domande casuali</p>
+                            </div>
+                            <div class="mode-card" id="rule-mode">
+                                <i class="fas fa-book"></i>
+                                <h4>Per Regola</h4>
+                                <p>Scegli una regola</p>
+                            </div>
+                            <div class="mode-card" id="exam-mode">
+                                <i class="fas fa-graduation-cap"></i>
+                                <h4>Esame</h4>
+                                <p>30 domande casuali</p>
+                            </div>
+                            <div class="mode-card" id="daily-mode">
+                                <i class="fas fa-calendar-day"></i>
+                                <h4>Sfida Quotidiana</h4>
+                                <p>5 nuove domande</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Rules selection screen (hidden by default) -->
+        <div id="rules-screen" class="hidden">
+            <div class="card">
+                <div class="card-content">
+                    <h2>Seleziona una regola</h2>
+                    <div class="rules-grid" id="rules-grid">
+                        <!-- Le regole verranno aggiunte dinamicamente qui -->
+                    </div>
+                    <button class="btn btn-secondary" id="back-to-home">Indietro</button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Quiz Regolamentari Calcio - Tutti i diritti riservati</p>
+        </footer>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

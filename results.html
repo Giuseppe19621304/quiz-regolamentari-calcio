@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risultati Quiz - Quiz Regolamentari Calcio a 11</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-futbol"></i> Quiz Regolamentari Calcio a 11</h1>
+            <p class="subtitle">Risultati del quiz</p>
+        </header>
+
+        <main>
+            <div class="card results-card">
+                <div class="results-header">
+                    <h2 id="results-title">Quiz completato!</h2>
+                    <div class="confetti" id="confetti-container"></div>
+                </div>
+
+                <div class="results-content">
+                    <div class="results-summary">
+                        <div class="result-stat">
+                            <i class="fas fa-star"></i>
+                            <h3>Punteggio totale</h3>
+                            <div class="result-value" id="final-score">100</div>
+                        </div>
+                        <div class="result-stat">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>Risposte corrette</h3>
+                            <div class="result-value" id="correct-answers">8/10</div>
+                        </div>
+                        <div class="result-stat">
+                            <i class="fas fa-clock"></i>
+                            <h3>Tempo medio</h3>
+                            <div class="result-value" id="average-time">12s</div>
+                        </div>
+                    </div>
+
+                    <div class="achievement-container" id="achievement-container">
+                        <div class="new-badge hidden" id="new-badge">
+                            <h3>Nuovo badge sbloccato!</h3>
+                            <div class="badge-showcase" id="badge-showcase">
+                                <img src="assets/images/badges/rule1.png" alt="Badge" id="badge-image">
+                                <div class="badge-name" id="badge-name">Esperto Regola 1</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comparison-chart">
+                        <h3>Confronto con i tentativi precedenti</h3>
+                        <div class="chart-container" id="comparison-chart">
+                            <!-- Il grafico sarà inserito dinamicamente -->
+                            <div class="no-data-message hidden" id="no-previous-attempts">
+                                Nessun tentativo precedente disponibile per il confronto
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-section">
+                        <h3>Domande da rivedere</h3>
+                        <div class="review-list" id="review-list">
+                            <!-- Le domande da rivedere saranno inserite dinamicamente -->
+                        </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="btn btn-primary" id="retry-btn">
+                            <i class="fas fa-redo"></i> Riprova
+                        </button>
+                        <button class="btn btn-secondary" id="home-btn">
+                            <i class="fas fa-home"></i> Home
+                        </button>
+                        <button class="btn btn-accent" id="share-btn">
+                            <i class="fas fa-share-alt"></i> Condividi
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Quiz Regolamentari Calcio - Tutti i diritti riservati</p>
+        </footer>
+    </div>
+
+    <script src="assets/js/results.js"></script>
+</body>
+</html>

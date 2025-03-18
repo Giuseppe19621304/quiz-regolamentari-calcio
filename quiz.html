@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz in corso - Quiz Regolamentari Calcio a 11</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-futbol"></i> Quiz Regolamentari Calcio a 11</h1>
+            <p class="subtitle" id="quiz-mode-subtitle">Quiz in corso</p>
+        </header>
+
+        <main>
+            <div class="card quiz-card">
+                <div class="quiz-header">
+                    <div class="quiz-progress">
+                        <div class="progress-text">
+                            <span id="current-question">1</span>/<span id="total-questions">10</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                    </div>
+                    <div class="quiz-info">
+                        <div class="quiz-timer" id="quiz-timer">
+                            <i class="fas fa-clock"></i> <span id="timer-value">20</span>
+                        </div>
+                        <div class="quiz-score">
+                            <i class="fas fa-star"></i> <span id="current-score">0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-content">
+                    <div class="rule-indicator" id="rule-indicator">Regola: <span id="current-rule">1</span></div>
+                    <h2 class="question" id="question-text">Domanda in caricamento...</h2>
+                    
+                    <div class="options-container" id="options-container">
+                        <div class="option" data-option="A">
+                            <span class="option-letter">A</span>
+                            <span class="option-text" id="option-a-text">Opzione A</span>
+                        </div>
+                        <div class="option" data-option="B">
+                            <span class="option-letter">B</span>
+                            <span class="option-text" id="option-b-text">Opzione B</span>
+                        </div>
+                        <div class="option" data-option="C">
+                            <span class="option-letter">C</span>
+                            <span class="option-text" id="option-c-text">Opzione C</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feedback-container hidden" id="feedback-container">
+                    <div class="feedback" id="feedback">
+                        <div class="feedback-icon">
+                            <i class="fas fa-check correct-icon"></i>
+                            <i class="fas fa-times incorrect-icon"></i>
+                        </div>
+                        <div class="feedback-text" id="feedback-text">
+                            Risposta corretta!
+                        </div>
+                        <div class="feedback-points" id="feedback-points">
+                            +10 punti
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" id="next-btn">Prossima domanda</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Quiz Regolamentari Calcio - Tutti i diritti riservati</p>
+        </footer>
+    </div>
+<div class="feedback-container" id="feedback-container">
+    <!-- Contenuto esistente -->
+</div>
+
+<!-- Aggiungi questo bottone -->
+<div class="exit-quiz-container">
+    <button class="btn btn-secondary" id="exit-quiz-btn">
+        <i class="fas fa-home"></i> Torna alla Home
+    </button>
+</div>
+
+    <script src="assets/js/quiz.js"></script>
+</body>
+</html>
